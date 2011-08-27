@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8351C4E14091B6600C47010 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8351C4D14091B6600C47010 /* Foundation.framework */; };
+		E8351C5914091B6600C47010 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8351C5814091B6600C47010 /* UIKit.framework */; };
+		E8351C5A14091B6600C47010 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8351C4D14091B6600C47010 /* Foundation.framework */; };
+		E8351C5C14091B6600C47010 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8351C5B14091B6600C47010 /* CoreGraphics.framework */; };
+		E8351C5F14091B6600C47010 /* libbzValidation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8351C4A14091B6600C47010 /* libbzValidation.a */; };
+		E8351C6514091B6600C47010 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E8351C6314091B6600C47010 /* InfoPlist.strings */; };
+		E8351C6814091B6600C47010 /* bzValidationTests.h in Resources */ = {isa = PBXBuildFile; fileRef = E8351C6714091B6600C47010 /* bzValidationTests.h */; };
+		E8351C6A14091B6600C47010 /* bzValidationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C6914091B6600C47010 /* bzValidationTests.m */; };
+		E8351C7514091BF900C47010 /* NSManagedObject+Validation.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C7314091BF900C47010 /* NSManagedObject+Validation.h */; };
+		E8351C7614091BF900C47010 /* NSManagedObject+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C7414091BF900C47010 /* NSManagedObject+Validation.m */; };
+		E8351C7A14091C0900C47010 /* ObjectValidationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C7714091C0900C47010 /* ObjectValidationProtocol.h */; };
+		E8351C7B14091C0900C47010 /* ValidationRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C7814091C0900C47010 /* ValidationRule.h */; };
+		E8351C7C14091C0900C47010 /* ValidationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C7914091C0900C47010 /* ValidationRule.m */; };
+		E8351C7F14091C1300C47010 /* UITextField+Validation.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C7D14091C1300C47010 /* UITextField+Validation.h */; };
+		E8351C8014091C1300C47010 /* UITextField+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C7E14091C1300C47010 /* UITextField+Validation.m */; };
+		E8351C8714091C2200C47010 /* NSManagedObjectValidationRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C8114091C2200C47010 /* NSManagedObjectValidationRule.h */; };
+		E8351C8814091C2200C47010 /* NSManagedObjectValidationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C8214091C2200C47010 /* NSManagedObjectValidationRule.m */; };
+		E8351C8914091C2200C47010 /* StringLengthRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C8314091C2200C47010 /* StringLengthRule.h */; };
+		E8351C8A14091C2200C47010 /* StringLengthRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C8414091C2200C47010 /* StringLengthRule.m */; };
+		E8351C8B14091C2200C47010 /* StringNumbersRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C8514091C2200C47010 /* StringNumbersRule.h */; };
+		E8351C8C14091C2200C47010 /* StringNumbersRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C8614091C2200C47010 /* StringNumbersRule.m */; };
+		E8351C8E14091C9C00C47010 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8351C8D14091C9C00C47010 /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8351C5D14091B6600C47010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8351C4114091B6600C47010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8351C4914091B6600C47010;
+			remoteInfo = bzValidation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E8351C4A14091B6600C47010 /* libbzValidation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbzValidation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8351C4D14091B6600C47010 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E8351C5114091B6600C47010 /* bzValidation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bzValidation-Prefix.pch"; sourceTree = "<group>"; };
+		E8351C5714091B6600C47010 /* bzValidationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bzValidationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8351C5814091B6600C47010 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E8351C5B14091B6600C47010 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E8351C6214091B6600C47010 /* bzValidationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bzValidationTests-Info.plist"; sourceTree = "<group>"; };
+		E8351C6414091B6600C47010 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E8351C6614091B6600C47010 /* bzValidationTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bzValidationTests-Prefix.pch"; sourceTree = "<group>"; };
+		E8351C6714091B6600C47010 /* bzValidationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = bzValidationTests.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E8351C6914091B6600C47010 /* bzValidationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = bzValidationTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E8351C7314091BF900C47010 /* NSManagedObject+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Validation.h"; sourceTree = "<group>"; };
+		E8351C7414091BF900C47010 /* NSManagedObject+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Validation.m"; sourceTree = "<group>"; };
+		E8351C7714091C0900C47010 /* ObjectValidationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectValidationProtocol.h; sourceTree = "<group>"; };
+		E8351C7814091C0900C47010 /* ValidationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationRule.h; sourceTree = "<group>"; };
+		E8351C7914091C0900C47010 /* ValidationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationRule.m; sourceTree = "<group>"; };
+		E8351C7D14091C1300C47010 /* UITextField+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Validation.h"; sourceTree = "<group>"; };
+		E8351C7E14091C1300C47010 /* UITextField+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Validation.m"; sourceTree = "<group>"; };
+		E8351C8114091C2200C47010 /* NSManagedObjectValidationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectValidationRule.h; sourceTree = "<group>"; };
+		E8351C8214091C2200C47010 /* NSManagedObjectValidationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectValidationRule.m; sourceTree = "<group>"; };
+		E8351C8314091C2200C47010 /* StringLengthRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringLengthRule.h; sourceTree = "<group>"; };
+		E8351C8414091C2200C47010 /* StringLengthRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringLengthRule.m; sourceTree = "<group>"; };
+		E8351C8514091C2200C47010 /* StringNumbersRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringNumbersRule.h; sourceTree = "<group>"; };
+		E8351C8614091C2200C47010 /* StringNumbersRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringNumbersRule.m; sourceTree = "<group>"; };
+		E8351C8D14091C9C00C47010 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8351C4714091B6600C47010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8351C8E14091C9C00C47010 /* CoreData.framework in Frameworks */,
+				E8351C4E14091B6600C47010 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8351C5314091B6600C47010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8351C5914091B6600C47010 /* UIKit.framework in Frameworks */,
+				E8351C5A14091B6600C47010 /* Foundation.framework in Frameworks */,
+				E8351C5C14091B6600C47010 /* CoreGraphics.framework in Frameworks */,
+				E8351C5F14091B6600C47010 /* libbzValidation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8351C3F14091B6600C47010 = {
+			isa = PBXGroup;
+			children = (
+				E8351C8D14091C9C00C47010 /* CoreData.framework */,
+				E8351C4F14091B6600C47010 /* bzValidation */,
+				E8351C6014091B6600C47010 /* bzValidationTests */,
+				E8351C4C14091B6600C47010 /* Frameworks */,
+				E8351C4B14091B6600C47010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8351C4B14091B6600C47010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8351C4A14091B6600C47010 /* libbzValidation.a */,
+				E8351C5714091B6600C47010 /* bzValidationTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8351C4C14091B6600C47010 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8351C4D14091B6600C47010 /* Foundation.framework */,
+				E8351C5814091B6600C47010 /* UIKit.framework */,
+				E8351C5B14091B6600C47010 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8351C4F14091B6600C47010 /* bzValidation */ = {
+			isa = PBXGroup;
+			children = (
+				E8351C8114091C2200C47010 /* NSManagedObjectValidationRule.h */,
+				E8351C8214091C2200C47010 /* NSManagedObjectValidationRule.m */,
+				E8351C8314091C2200C47010 /* StringLengthRule.h */,
+				E8351C8414091C2200C47010 /* StringLengthRule.m */,
+				E8351C8514091C2200C47010 /* StringNumbersRule.h */,
+				E8351C8614091C2200C47010 /* StringNumbersRule.m */,
+				E8351C7D14091C1300C47010 /* UITextField+Validation.h */,
+				E8351C7E14091C1300C47010 /* UITextField+Validation.m */,
+				E8351C7714091C0900C47010 /* ObjectValidationProtocol.h */,
+				E8351C7814091C0900C47010 /* ValidationRule.h */,
+				E8351C7914091C0900C47010 /* ValidationRule.m */,
+				E8351C7314091BF900C47010 /* NSManagedObject+Validation.h */,
+				E8351C7414091BF900C47010 /* NSManagedObject+Validation.m */,
+				E8351C5014091B6600C47010 /* Supporting Files */,
+			);
+			path = bzValidation;
+			sourceTree = "<group>";
+		};
+		E8351C5014091B6600C47010 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8351C5114091B6600C47010 /* bzValidation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8351C6014091B6600C47010 /* bzValidationTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8351C6714091B6600C47010 /* bzValidationTests.h */,
+				E8351C6914091B6600C47010 /* bzValidationTests.m */,
+				E8351C6114091B6600C47010 /* Supporting Files */,
+			);
+			path = bzValidationTests;
+			sourceTree = "<group>";
+		};
+		E8351C6114091B6600C47010 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8351C6214091B6600C47010 /* bzValidationTests-Info.plist */,
+				E8351C6314091B6600C47010 /* InfoPlist.strings */,
+				E8351C6614091B6600C47010 /* bzValidationTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E8351C4814091B6600C47010 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8351C7514091BF900C47010 /* NSManagedObject+Validation.h in Headers */,
+				E8351C7A14091C0900C47010 /* ObjectValidationProtocol.h in Headers */,
+				E8351C7B14091C0900C47010 /* ValidationRule.h in Headers */,
+				E8351C7F14091C1300C47010 /* UITextField+Validation.h in Headers */,
+				E8351C8714091C2200C47010 /* NSManagedObjectValidationRule.h in Headers */,
+				E8351C8914091C2200C47010 /* StringLengthRule.h in Headers */,
+				E8351C8B14091C2200C47010 /* StringNumbersRule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E8351C4914091B6600C47010 /* bzValidation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8351C6D14091B6600C47010 /* Build configuration list for PBXNativeTarget "bzValidation" */;
+			buildPhases = (
+				E8351C4614091B6600C47010 /* Sources */,
+				E8351C4714091B6600C47010 /* Frameworks */,
+				E8351C4814091B6600C47010 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bzValidation;
+			productName = bzValidation;
+			productReference = E8351C4A14091B6600C47010 /* libbzValidation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E8351C5614091B6600C47010 /* bzValidationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8351C7014091B6600C47010 /* Build configuration list for PBXNativeTarget "bzValidationTests" */;
+			buildPhases = (
+				E8351C5214091B6600C47010 /* Sources */,
+				E8351C5314091B6600C47010 /* Frameworks */,
+				E8351C5414091B6600C47010 /* Resources */,
+				E8351C5514091B6600C47010 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8351C5E14091B6600C47010 /* PBXTargetDependency */,
+			);
+			name = bzValidationTests;
+			productName = bzValidationTests;
+			productReference = E8351C5714091B6600C47010 /* bzValidationTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8351C4114091B6600C47010 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Baked Ziti";
+			};
+			buildConfigurationList = E8351C4414091B6600C47010 /* Build configuration list for PBXProject "bzValidation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E8351C3F14091B6600C47010;
+			productRefGroup = E8351C4B14091B6600C47010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8351C4914091B6600C47010 /* bzValidation */,
+				E8351C5614091B6600C47010 /* bzValidationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8351C5414091B6600C47010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8351C6514091B6600C47010 /* InfoPlist.strings in Resources */,
+				E8351C6814091B6600C47010 /* bzValidationTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E8351C5514091B6600C47010 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8351C4614091B6600C47010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8351C7614091BF900C47010 /* NSManagedObject+Validation.m in Sources */,
+				E8351C7C14091C0900C47010 /* ValidationRule.m in Sources */,
+				E8351C8014091C1300C47010 /* UITextField+Validation.m in Sources */,
+				E8351C8814091C2200C47010 /* NSManagedObjectValidationRule.m in Sources */,
+				E8351C8A14091C2200C47010 /* StringLengthRule.m in Sources */,
+				E8351C8C14091C2200C47010 /* StringNumbersRule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8351C5214091B6600C47010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8351C6A14091B6600C47010 /* bzValidationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8351C5E14091B6600C47010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8351C4914091B6600C47010 /* bzValidation */;
+			targetProxy = E8351C5D14091B6600C47010 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8351C6314091B6600C47010 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8351C6414091B6600C47010 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8351C6B14091B6600C47010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E8351C6C14091B6600C47010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		E8351C6E14091B6600C47010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/bzValidation.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bzValidation/bzValidation-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8351C6F14091B6600C47010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/bzValidation.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bzValidation/bzValidation-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E8351C7114091B6600C47010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bzValidationTests/bzValidationTests-Prefix.pch";
+				INFOPLIST_FILE = "bzValidationTests/bzValidationTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E8351C7214091B6600C47010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bzValidationTests/bzValidationTests-Prefix.pch";
+				INFOPLIST_FILE = "bzValidationTests/bzValidationTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8351C4414091B6600C47010 /* Build configuration list for PBXProject "bzValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8351C6B14091B6600C47010 /* Debug */,
+				E8351C6C14091B6600C47010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8351C6D14091B6600C47010 /* Build configuration list for PBXNativeTarget "bzValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8351C6E14091B6600C47010 /* Debug */,
+				E8351C6F14091B6600C47010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E8351C7014091B6600C47010 /* Build configuration list for PBXNativeTarget "bzValidationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8351C7114091B6600C47010 /* Debug */,
+				E8351C7214091B6600C47010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8351C4114091B6600C47010 /* Project object */;
+}

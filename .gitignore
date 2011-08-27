@@ -1,0 +1,29 @@
+
+#osx noise
+.DS_Store
+profile
+
+
+#*~.nib
+
+# xcode noise
+build/
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+
+# xcode 4
+*.xcworkspace/
+xcuserdata/
+
+#.xcodeproj/
+#!project.pbxproj
+#!*.xcodeproj/project.pbxproj
+
+# other
+*.swp
+
+# python noise
+*.pyc
