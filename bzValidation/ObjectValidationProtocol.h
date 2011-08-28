@@ -7,26 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ValidationRule.h"
-
-@protocol ObjectValidationDelegate <NSObject>
-
-@optional
-
-- (void)objectWillValidate:(NSObject*)targetObject;
-- (BOOL)object:(NSObject*)targetObject didValidateWithResult:(BOOL)valid andMessages:(NSArray*)messages;
-
-@end
+#import "ValidationIncludes.h"
 
 @protocol ObjectValidationProtocol <NSObject>
 
-@optional
-@property (nonatomic, retain) NSObject *value;
-
 @required
-@property (nonatomic, readonly) NSArray* rules;
+
+@property (nonatomic, readonly) NSArray *rules;
+@property (nonatomic, readonly) NSArray *validationValues;
+@property (nonatomic, assign) id<ObjectValidationDelegate> validationDelegate;
+
 - (void) addRule:(id<ValidationRuleProtocol>)rule;
 - (void) removeRule:(id<ValidationRuleProtocol>)rule;
+
 - (BOOL) validate;
 
 

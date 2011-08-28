@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "ObjectValidationProtocol.h"
+#import "ValidationIncludes.h"
 
 
 @interface NSManagedObject (Validation)  <ObjectValidationProtocol>

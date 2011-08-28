@@ -18,17 +18,18 @@
 		E8351C7514091BF900C47010 /* NSManagedObject+Validation.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C7314091BF900C47010 /* NSManagedObject+Validation.h */; };
 		E8351C7614091BF900C47010 /* NSManagedObject+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C7414091BF900C47010 /* NSManagedObject+Validation.m */; };
 		E8351C7A14091C0900C47010 /* ObjectValidationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C7714091C0900C47010 /* ObjectValidationProtocol.h */; };
-		E8351C7B14091C0900C47010 /* ValidationRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C7814091C0900C47010 /* ValidationRule.h */; };
-		E8351C7C14091C0900C47010 /* ValidationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C7914091C0900C47010 /* ValidationRule.m */; };
 		E8351C7F14091C1300C47010 /* UITextField+Validation.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C7D14091C1300C47010 /* UITextField+Validation.h */; };
 		E8351C8014091C1300C47010 /* UITextField+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C7E14091C1300C47010 /* UITextField+Validation.m */; };
-		E8351C8714091C2200C47010 /* NSManagedObjectValidationRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C8114091C2200C47010 /* NSManagedObjectValidationRule.h */; };
-		E8351C8814091C2200C47010 /* NSManagedObjectValidationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C8214091C2200C47010 /* NSManagedObjectValidationRule.m */; };
 		E8351C8914091C2200C47010 /* StringLengthRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C8314091C2200C47010 /* StringLengthRule.h */; };
 		E8351C8A14091C2200C47010 /* StringLengthRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C8414091C2200C47010 /* StringLengthRule.m */; };
 		E8351C8B14091C2200C47010 /* StringNumbersRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C8514091C2200C47010 /* StringNumbersRule.h */; };
 		E8351C8C14091C2200C47010 /* StringNumbersRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C8614091C2200C47010 /* StringNumbersRule.m */; };
 		E8351C8E14091C9C00C47010 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8351C8D14091C9C00C47010 /* CoreData.framework */; };
+		E8351CA9140AD7A500C47010 /* ObjectValidationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351CA8140AD7A500C47010 /* ObjectValidationDelegate.h */; };
+		E8351CAE140ADB2900C47010 /* ValidationRuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351CAD140ADB2900C47010 /* ValidationRuleProtocol.h */; };
+		E8351CB1140ADBAE00C47010 /* ValidationValue.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351CAF140ADBAE00C47010 /* ValidationValue.h */; };
+		E8351CB2140ADBAE00C47010 /* ValidationValue.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351CB0140ADBAE00C47010 /* ValidationValue.m */; };
+		E8351CB5140ADC5900C47010 /* ValidationIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351CB4140ADC5900C47010 /* ValidationIncludes.h */; };
 		E8438D4F140A9DC300C723B7 /* ObjectValidationRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8438D4D140A9DC300C723B7 /* ObjectValidationRule.h */; };
 		E8438D50140A9DC300C723B7 /* ObjectValidationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8438D4E140A9DC300C723B7 /* ObjectValidationRule.m */; };
 		E8438D54140A9E5F00C723B7 /* CompareTwoValuesRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8438D52140A9E5F00C723B7 /* CompareTwoValuesRule.h */; };
@@ -60,17 +61,18 @@
 		E8351C7314091BF900C47010 /* NSManagedObject+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Validation.h"; sourceTree = "<group>"; };
 		E8351C7414091BF900C47010 /* NSManagedObject+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Validation.m"; sourceTree = "<group>"; };
 		E8351C7714091C0900C47010 /* ObjectValidationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectValidationProtocol.h; sourceTree = "<group>"; };
-		E8351C7814091C0900C47010 /* ValidationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationRule.h; sourceTree = "<group>"; };
-		E8351C7914091C0900C47010 /* ValidationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationRule.m; sourceTree = "<group>"; };
 		E8351C7D14091C1300C47010 /* UITextField+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Validation.h"; sourceTree = "<group>"; };
 		E8351C7E14091C1300C47010 /* UITextField+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Validation.m"; sourceTree = "<group>"; };
-		E8351C8114091C2200C47010 /* NSManagedObjectValidationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectValidationRule.h; sourceTree = "<group>"; };
-		E8351C8214091C2200C47010 /* NSManagedObjectValidationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectValidationRule.m; sourceTree = "<group>"; };
 		E8351C8314091C2200C47010 /* StringLengthRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringLengthRule.h; sourceTree = "<group>"; };
 		E8351C8414091C2200C47010 /* StringLengthRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringLengthRule.m; sourceTree = "<group>"; };
 		E8351C8514091C2200C47010 /* StringNumbersRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringNumbersRule.h; sourceTree = "<group>"; };
 		E8351C8614091C2200C47010 /* StringNumbersRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringNumbersRule.m; sourceTree = "<group>"; };
 		E8351C8D14091C9C00C47010 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E8351CA8140AD7A500C47010 /* ObjectValidationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectValidationDelegate.h; sourceTree = "<group>"; };
+		E8351CAD140ADB2900C47010 /* ValidationRuleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationRuleProtocol.h; sourceTree = "<group>"; };
+		E8351CAF140ADBAE00C47010 /* ValidationValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationValue.h; sourceTree = "<group>"; };
+		E8351CB0140ADBAE00C47010 /* ValidationValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationValue.m; sourceTree = "<group>"; };
+		E8351CB4140ADC5900C47010 /* ValidationIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationIncludes.h; sourceTree = "<group>"; };
 		E8438D4D140A9DC300C723B7 /* ObjectValidationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectValidationRule.h; sourceTree = "<group>"; };
 		E8438D4E140A9DC300C723B7 /* ObjectValidationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectValidationRule.m; sourceTree = "<group>"; };
 		E8438D52140A9E5F00C723B7 /* CompareTwoValuesRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareTwoValuesRule.h; sourceTree = "<group>"; };
@@ -137,9 +139,7 @@
 			children = (
 				E8438D56140A9E6A00C723B7 /* Validation Rules */,
 				E8438D57140A9EB300C723B7 /* Validation Objects */,
-				E8351C7714091C0900C47010 /* ObjectValidationProtocol.h */,
-				E8351C7814091C0900C47010 /* ValidationRule.h */,
-				E8351C7914091C0900C47010 /* ValidationRule.m */,
+				E8351CB3140ADC1300C47010 /* Validation Core */,
 				E8351C5014091B6600C47010 /* Supporting Files */,
 			);
 			path = bzValidation;
@@ -174,6 +174,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E8351CB3140ADC1300C47010 /* Validation Core */ = {
+			isa = PBXGroup;
+			children = (
+				E8351C7714091C0900C47010 /* ObjectValidationProtocol.h */,
+				E8351CA8140AD7A500C47010 /* ObjectValidationDelegate.h */,
+				E8351CAD140ADB2900C47010 /* ValidationRuleProtocol.h */,
+				E8351CAF140ADBAE00C47010 /* ValidationValue.h */,
+				E8351CB0140ADBAE00C47010 /* ValidationValue.m */,
+				E8351CB4140ADC5900C47010 /* ValidationIncludes.h */,
+			);
+			name = "Validation Core";
+			sourceTree = "<group>";
+		};
 		E8438D56140A9E6A00C723B7 /* Validation Rules */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,8 +194,6 @@
 				E8438D53140A9E5F00C723B7 /* CompareTwoValuesRule.m */,
 				E8438D4D140A9DC300C723B7 /* ObjectValidationRule.h */,
 				E8438D4E140A9DC300C723B7 /* ObjectValidationRule.m */,
-				E8351C8114091C2200C47010 /* NSManagedObjectValidationRule.h */,
-				E8351C8214091C2200C47010 /* NSManagedObjectValidationRule.m */,
 				E8351C8314091C2200C47010 /* StringLengthRule.h */,
 				E8351C8414091C2200C47010 /* StringLengthRule.m */,
 				E8351C8514091C2200C47010 /* StringNumbersRule.h */,
@@ -211,13 +222,15 @@
 			files = (
 				E8351C7514091BF900C47010 /* NSManagedObject+Validation.h in Headers */,
 				E8351C7A14091C0900C47010 /* ObjectValidationProtocol.h in Headers */,
-				E8351C7B14091C0900C47010 /* ValidationRule.h in Headers */,
 				E8351C7F14091C1300C47010 /* UITextField+Validation.h in Headers */,
-				E8351C8714091C2200C47010 /* NSManagedObjectValidationRule.h in Headers */,
 				E8351C8914091C2200C47010 /* StringLengthRule.h in Headers */,
 				E8351C8B14091C2200C47010 /* StringNumbersRule.h in Headers */,
 				E8438D4F140A9DC300C723B7 /* ObjectValidationRule.h in Headers */,
 				E8438D54140A9E5F00C723B7 /* CompareTwoValuesRule.h in Headers */,
+				E8351CA9140AD7A500C47010 /* ObjectValidationDelegate.h in Headers */,
+				E8351CAE140ADB2900C47010 /* ValidationRuleProtocol.h in Headers */,
+				E8351CB1140ADBAE00C47010 /* ValidationValue.h in Headers */,
+				E8351CB5140ADC5900C47010 /* ValidationIncludes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,13 +333,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8351C7614091BF900C47010 /* NSManagedObject+Validation.m in Sources */,
-				E8351C7C14091C0900C47010 /* ValidationRule.m in Sources */,
 				E8351C8014091C1300C47010 /* UITextField+Validation.m in Sources */,
-				E8351C8814091C2200C47010 /* NSManagedObjectValidationRule.m in Sources */,
 				E8351C8A14091C2200C47010 /* StringLengthRule.m in Sources */,
 				E8351C8C14091C2200C47010 /* StringNumbersRule.m in Sources */,
 				E8438D50140A9DC300C723B7 /* ObjectValidationRule.m in Sources */,
 				E8438D55140A9E5F00C723B7 /* CompareTwoValuesRule.m in Sources */,
+				E8351CB2140ADBAE00C47010 /* ValidationValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ObjectValidationRule.h
+//  ValidationRuleProtocol.h
 //  bzValidation
 //
 //  Created by Joseph DeCarlo on 8/28/11.
@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ValidationIncludes.h"
 
-@interface ObjectValidationRule : NSObject <ValidationRuleProtocol>
+
+@protocol ValidationRuleProtocol <NSObject>
+
+- (BOOL) validateWithMessages:(NSArray**)errorMessages;
 
 @end

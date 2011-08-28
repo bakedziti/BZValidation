@@ -63,6 +63,27 @@ static char validationDelegateKey;
     return [self writableRules];
 }
 
+- (NSArray*) validationValues {
+    
+    NSMutableArray *vValues = [NSMutableArray array];
+    
+    NSEntityDescription *entityDescription = (NSEntityDescription*) self;
+    
+    NSDictionary *attributes = [entityDescription attributesByName];
+    
+    
+    NSArray *keys = [attributes allKeys];
+    
+    for (NSString* key in keys) {
+        
+        ValidationValue *value = [ValidationValue validationValue:[attributes objectForKey:key] andFieldName:key];
+        
+        [vValues addObject:value];
+    }
+    
+    return  vValues;
+}
+
 - (void) addRule:(id<ValidationRuleProtocol>)rule {
     
     [self.writableRules addObject:rule];

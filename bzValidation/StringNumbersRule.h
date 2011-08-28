@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ValidationRule.h"
+#import "ValidationIncludes.h"
 
 typedef enum {
     
@@ -19,7 +19,7 @@ typedef enum {
     
 } numbersRules;
 
-@interface StringNumbersRule : ValidationRule {
+@interface StringNumbersRule : NSObject <ValidationRuleProtocol> {
     
 }
 

@@ -7,7 +7,6 @@
 //
 
 #import "UITextField+Validation.h"
-#import "ValidationRule.h"
 #import <objc/runtime.h>
 
 @interface UITextField()
@@ -39,7 +38,7 @@ static char valueKey;
 - (void)dealloc {
     
 //    self.companion = nil;
-    self.value = nil;
+
 //    self.trueDelegate = nil;
     self.validationDelegate = nil;
     self.validTextColor = nil;
@@ -50,16 +49,6 @@ static char valueKey;
 
 //--------------------------------------------------------------------------------------------------------------
 #pragma mark - Properties
-
-- (void) setValidationDelegate:(id<ObjectValidationDelegate>)validationDelegate {
-    
-    objc_setAssociatedObject(self, &validationDelegateKey, validationDelegate, OBJC_ASSOCIATION_ASSIGN);
-}
-
-- (id<ObjectValidationDelegate>)validationDelegate {
-    
-    return objc_getAssociatedObject(self, &validationDelegateKey);
-}
 
 - (void) setValidTextColor:(UIColor *)validTextColor {
     
@@ -170,6 +159,22 @@ static char valueKey;
     return valid;
 }
 
+- (NSArray*) validationValues {
+    
+    return [NSArray arrayWithObject:[ValidationValue validationValue:self.text andFieldName:@"text"]];
+}
+
+- (void) setValidationDelegate:(id<ObjectValidationDelegate>)validationDelegate {
+    
+    objc_setAssociatedObject(self, &validationDelegateKey, validationDelegate, OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (id<ObjectValidationDelegate>)validationDelegate {
+    
+    return objc_getAssociatedObject(self, &validationDelegateKey);
+}
+
+
 - (NSMutableArray*) writableRules {
     
     NSMutableArray *rulesArray = (NSMutableArray*)objc_getAssociatedObject(self, &rulesKey);
@@ -207,8 +212,9 @@ static char valueKey;
 }
 
 - (void) addRule:(id<ValidationRuleProtocol>)rule {
-    
-    [rule setValidationControl:self];
+  
+#warning TODO: Need to figure out an alternative
+//    [rule setValidationControl:self];
     [self.writableRules addObject:rule];
 }
 
