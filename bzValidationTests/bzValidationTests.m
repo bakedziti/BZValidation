@@ -25,9 +25,14 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in bzValidationTests");
+
+- (void) NSManagedObjectTest {
+    
+    
 }
+//- (void)testExample
+//{
+//    STFail(@"Unit tests are not implemented yet in bzValidationTests");
+//}
 
 @end

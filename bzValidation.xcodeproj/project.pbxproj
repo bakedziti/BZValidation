@@ -30,6 +30,7 @@
 		E8351CB1140ADBAE00C47010 /* ValidationValue.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351CAF140ADBAE00C47010 /* ValidationValue.h */; };
 		E8351CB2140ADBAE00C47010 /* ValidationValue.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351CB0140ADBAE00C47010 /* ValidationValue.m */; };
 		E8351CB5140ADC5900C47010 /* ValidationIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351CB4140ADC5900C47010 /* ValidationIncludes.h */; };
+		E8351CB8140B0C2B00C47010 /* NSManagedObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351CB7140B0C2B00C47010 /* NSManagedObjectTest.m */; };
 		E8438D4F140A9DC300C723B7 /* ObjectValidationRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8438D4D140A9DC300C723B7 /* ObjectValidationRule.h */; };
 		E8438D50140A9DC300C723B7 /* ObjectValidationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8438D4E140A9DC300C723B7 /* ObjectValidationRule.m */; };
 		E8438D54140A9E5F00C723B7 /* CompareTwoValuesRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8438D52140A9E5F00C723B7 /* CompareTwoValuesRule.h */; };
@@ -73,6 +74,8 @@
 		E8351CAF140ADBAE00C47010 /* ValidationValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationValue.h; sourceTree = "<group>"; };
 		E8351CB0140ADBAE00C47010 /* ValidationValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationValue.m; sourceTree = "<group>"; };
 		E8351CB4140ADC5900C47010 /* ValidationIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationIncludes.h; sourceTree = "<group>"; };
+		E8351CB6140B0C2B00C47010 /* NSManagedObjectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectTest.h; sourceTree = "<group>"; };
+		E8351CB7140B0C2B00C47010 /* NSManagedObjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectTest.m; sourceTree = "<group>"; };
 		E8438D4D140A9DC300C723B7 /* ObjectValidationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectValidationRule.h; sourceTree = "<group>"; };
 		E8438D4E140A9DC300C723B7 /* ObjectValidationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectValidationRule.m; sourceTree = "<group>"; };
 		E8438D52140A9E5F00C723B7 /* CompareTwoValuesRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareTwoValuesRule.h; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				E8351C6714091B6600C47010 /* bzValidationTests.h */,
 				E8351C6914091B6600C47010 /* bzValidationTests.m */,
 				E8351C6114091B6600C47010 /* Supporting Files */,
+				E8351CB6140B0C2B00C47010 /* NSManagedObjectTest.h */,
+				E8351CB7140B0C2B00C47010 /* NSManagedObjectTest.m */,
 			);
 			path = bzValidationTests;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8351C6A14091B6600C47010 /* bzValidationTests.m in Sources */,
+				E8351CB8140B0C2B00C47010 /* NSManagedObjectTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
