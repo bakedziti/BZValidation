@@ -7,15 +7,76 @@
 //
 
 #import "NSManagedObject+Validation.h"
+#import <objc/runtime.h>
 
 @interface NSManagedObject()
 
 - (NSString*)stringForError:(NSError*)error;
 - (NSArray*) breakUpErrors:(NSError*)error;
 
+@property (nonatomic, retain) NSMutableArray* writableRules;
+
 @end
 
 @implementation NSManagedObject (Validation)
+
+static char writableRulesKey;
+static char validationDelegateKey;
+
+//--------------------------------------------------------------------------------------------------------------
+#pragma mark - Properties
+
+- (void) setWritableRules:(NSMutableArray *)writableRules {
+    
+    objc_setAssociatedObject(self, &writableRules, writableRules, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (NSMutableArray*) writableRules {
+    
+    NSMutableArray *writableArray = objc_getAssociatedObject(self, &writableRulesKey);
+    
+    if (!writableArray) {
+        
+        writableArray = [NSMutableArray array];
+        
+        [self setWritableRules:writableArray];
+    }
+    
+    return writableArray;
+}
+
+- (void) setValidationDelegate:(id<ObjectValidationDelegate>)validationDelegate {
+    
+    objc_setAssociatedObject(self, &validationDelegateKey, validationDelegate, OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (id<ObjectValidationDelegate>) validationDelegate {
+    
+    return objc_getAssociatedObject(self, &validationDelegateKey);
+}
+
+//--------------------------------------------------------------------------------------------------------------
+#pragma mark - ObjectValidationProtocol
+
+- (NSArray*) rules {
+    
+    return [self writableRules];
+}
+
+- (void) addRule:(id<ValidationRuleProtocol>)rule {
+    
+    [self.writableRules addObject:rule];
+}
+
+- (void) removeRule:(id<ValidationRuleProtocol>)rule {
+    
+    [self.writableRules removeObject:rule];
+}
+
+- (BOOL) validate {
+    
+    return NO;
+}
 
 /*
  NSManagedObjectValidationError                   = 1550,   // generic validation error

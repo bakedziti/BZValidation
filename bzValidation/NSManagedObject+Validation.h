@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "ObjectValidationProtocol.h"
 
 
-@interface NSManagedObject (Validation)
+@interface NSManagedObject (Validation)  <ObjectValidationProtocol>
+
+@property (nonatomic, assign) id<ObjectValidationDelegate> validationDelegate;
 
 - (BOOL) insertValidationResultWithErrorStrings:(NSArray**)errorStrings;
 - (BOOL) updateValidationResultWithErrorStrings:(NSArray**)errorStrings;

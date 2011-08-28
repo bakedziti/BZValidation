@@ -23,9 +23,11 @@
 
 @protocol ObjectValidationProtocol <NSObject>
 
+@optional
 @property (nonatomic, retain) NSObject *value;
-@property (nonatomic, readonly) NSArray* rules;
 
+@required
+@property (nonatomic, readonly) NSArray* rules;
 - (void) addRule:(id<ValidationRuleProtocol>)rule;
 - (void) removeRule:(id<ValidationRuleProtocol>)rule;
 - (BOOL) validate;
