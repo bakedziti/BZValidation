@@ -29,6 +29,10 @@
 		E8351C8B14091C2200C47010 /* StringNumbersRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351C8514091C2200C47010 /* StringNumbersRule.h */; };
 		E8351C8C14091C2200C47010 /* StringNumbersRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351C8614091C2200C47010 /* StringNumbersRule.m */; };
 		E8351C8E14091C9C00C47010 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8351C8D14091C9C00C47010 /* CoreData.framework */; };
+		E8438D4F140A9DC300C723B7 /* ObjectValidationRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8438D4D140A9DC300C723B7 /* ObjectValidationRule.h */; };
+		E8438D50140A9DC300C723B7 /* ObjectValidationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8438D4E140A9DC300C723B7 /* ObjectValidationRule.m */; };
+		E8438D54140A9E5F00C723B7 /* CompareTwoValuesRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8438D52140A9E5F00C723B7 /* CompareTwoValuesRule.h */; };
+		E8438D55140A9E5F00C723B7 /* CompareTwoValuesRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8438D53140A9E5F00C723B7 /* CompareTwoValuesRule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		E8351C8514091C2200C47010 /* StringNumbersRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringNumbersRule.h; sourceTree = "<group>"; };
 		E8351C8614091C2200C47010 /* StringNumbersRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringNumbersRule.m; sourceTree = "<group>"; };
 		E8351C8D14091C9C00C47010 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E8438D4D140A9DC300C723B7 /* ObjectValidationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectValidationRule.h; sourceTree = "<group>"; };
+		E8438D4E140A9DC300C723B7 /* ObjectValidationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectValidationRule.m; sourceTree = "<group>"; };
+		E8438D52140A9E5F00C723B7 /* CompareTwoValuesRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareTwoValuesRule.h; sourceTree = "<group>"; };
+		E8438D53140A9E5F00C723B7 /* CompareTwoValuesRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompareTwoValuesRule.m; sourceTree = "<group>"; };
 		E8D799551409DD91002B5FBF /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,19 +135,11 @@
 		E8351C4F14091B6600C47010 /* bzValidation */ = {
 			isa = PBXGroup;
 			children = (
-				E8351C8114091C2200C47010 /* NSManagedObjectValidationRule.h */,
-				E8351C8214091C2200C47010 /* NSManagedObjectValidationRule.m */,
-				E8351C8314091C2200C47010 /* StringLengthRule.h */,
-				E8351C8414091C2200C47010 /* StringLengthRule.m */,
-				E8351C8514091C2200C47010 /* StringNumbersRule.h */,
-				E8351C8614091C2200C47010 /* StringNumbersRule.m */,
-				E8351C7D14091C1300C47010 /* UITextField+Validation.h */,
-				E8351C7E14091C1300C47010 /* UITextField+Validation.m */,
+				E8438D56140A9E6A00C723B7 /* Validation Rules */,
+				E8438D57140A9EB300C723B7 /* Validation Objects */,
 				E8351C7714091C0900C47010 /* ObjectValidationProtocol.h */,
 				E8351C7814091C0900C47010 /* ValidationRule.h */,
 				E8351C7914091C0900C47010 /* ValidationRule.m */,
-				E8351C7314091BF900C47010 /* NSManagedObject+Validation.h */,
-				E8351C7414091BF900C47010 /* NSManagedObject+Validation.m */,
 				E8351C5014091B6600C47010 /* Supporting Files */,
 			);
 			path = bzValidation;
@@ -174,6 +174,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E8438D56140A9E6A00C723B7 /* Validation Rules */ = {
+			isa = PBXGroup;
+			children = (
+				E8438D52140A9E5F00C723B7 /* CompareTwoValuesRule.h */,
+				E8438D53140A9E5F00C723B7 /* CompareTwoValuesRule.m */,
+				E8438D4D140A9DC300C723B7 /* ObjectValidationRule.h */,
+				E8438D4E140A9DC300C723B7 /* ObjectValidationRule.m */,
+				E8351C8114091C2200C47010 /* NSManagedObjectValidationRule.h */,
+				E8351C8214091C2200C47010 /* NSManagedObjectValidationRule.m */,
+				E8351C8314091C2200C47010 /* StringLengthRule.h */,
+				E8351C8414091C2200C47010 /* StringLengthRule.m */,
+				E8351C8514091C2200C47010 /* StringNumbersRule.h */,
+				E8351C8614091C2200C47010 /* StringNumbersRule.m */,
+			);
+			name = "Validation Rules";
+			sourceTree = "<group>";
+		};
+		E8438D57140A9EB300C723B7 /* Validation Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E8351C7D14091C1300C47010 /* UITextField+Validation.h */,
+				E8351C7E14091C1300C47010 /* UITextField+Validation.m */,
+				E8351C7314091BF900C47010 /* NSManagedObject+Validation.h */,
+				E8351C7414091BF900C47010 /* NSManagedObject+Validation.m */,
+			);
+			name = "Validation Objects";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -188,6 +216,8 @@
 				E8351C8714091C2200C47010 /* NSManagedObjectValidationRule.h in Headers */,
 				E8351C8914091C2200C47010 /* StringLengthRule.h in Headers */,
 				E8351C8B14091C2200C47010 /* StringNumbersRule.h in Headers */,
+				E8438D4F140A9DC300C723B7 /* ObjectValidationRule.h in Headers */,
+				E8438D54140A9E5F00C723B7 /* CompareTwoValuesRule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +325,8 @@
 				E8351C8814091C2200C47010 /* NSManagedObjectValidationRule.m in Sources */,
 				E8351C8A14091C2200C47010 /* StringLengthRule.m in Sources */,
 				E8351C8C14091C2200C47010 /* StringNumbersRule.m in Sources */,
+				E8438D50140A9DC300C723B7 /* ObjectValidationRule.m in Sources */,
+				E8438D55140A9E5F00C723B7 /* CompareTwoValuesRule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

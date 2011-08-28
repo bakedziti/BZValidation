@@ -6,9 +6,6 @@
 //  Copyright 2011 Baked Ziti. All rights reserved.
 //
 
-#ifndef __CONTROLVALIDATION_PROTOCOL
-#define __CONTROLVALIDATION_PROTOCOL
-
 #import <Foundation/Foundation.h>
 #import "ValidationRule.h"
 
@@ -35,4 +32,3 @@
 
 @end
 
-#endif

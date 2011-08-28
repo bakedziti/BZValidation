@@ -119,7 +119,7 @@ static char valueKey;
 //}
 
 //--------------------------------------------------------------------------------------------------------------
-#pragma mark - ControlValidationProtocol
+#pragma mark - ObjectValidationProtocol
 
 - (BOOL) validate {
     

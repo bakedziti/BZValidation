@@ -130,7 +130,7 @@ static char validationDelegateKey;
 //--------------------------------------------------------------------------------------------------------------
 #pragma mark - Public Methods
 
-- (BOOL) insertValidationResultWithErrorStrings:(NSArray **)errorStrings {
+- (BOOL) preValidateForInsert:(NSArray **)errorStrings {
     
     NSError *error = nil;
     
@@ -153,7 +153,7 @@ static char validationDelegateKey;
     return valid;
 }
 
-- (BOOL) updateValidationResultWithErrorStrings:(NSArray **)errorStrings {
+- (BOOL) preValidateForUpdate:(NSArray **)errorStrings {
     
     NSError *error = nil;
     
@@ -176,7 +176,7 @@ static char validationDelegateKey;
     return valid;
 }
 
-- (BOOL) deleteValidationResultWithErrorStrings:(NSArray **)errorStrings {
+- (BOOL) preValidateForDelete:(NSArray **)errorStrings {
     
     NSError *error = nil;
     

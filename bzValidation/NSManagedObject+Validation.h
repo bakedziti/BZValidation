@@ -15,8 +15,8 @@
 
 @property (nonatomic, assign) id<ObjectValidationDelegate> validationDelegate;
 
-- (BOOL) insertValidationResultWithErrorStrings:(NSArray**)errorStrings;
-- (BOOL) updateValidationResultWithErrorStrings:(NSArray**)errorStrings;
-- (BOOL) deleteValidationResultWithErrorStrings:(NSArray**)errorStrings;
+- (BOOL) preValidateForInsert:(NSArray**)errorStrings;
+- (BOOL) preValidateForUpdate:(NSArray**)errorStrings;
+- (BOOL) preValidateForDelete:(NSArray**)errorStrings;
 
 @end

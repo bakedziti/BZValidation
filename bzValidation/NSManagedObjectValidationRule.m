@@ -50,27 +50,27 @@
 - (BOOL) validateWithMessages:(NSArray **)errorMessages {
     
     BOOL valid = YES;
-    
-    NSArray *messages = nil;
-    
-    switch (self.managedObjectvalidationRuleType) {
-        case NSManagedObjectValidationUpdateRuleType:
-            valid = [self.managedObject updateValidationResultWithErrorStrings:&messages];
-            break;
-        case NSManagedObjectValidationInsertRuleType:
-            valid = [self.managedObject insertValidationResultWithErrorStrings:&messages];
-            break;
-        case NSManagedObjectValidationDeleteRuleType:
-            valid = [self.managedObject deleteValidationResultWithErrorStrings:&messages];
-            break;
-        case NSManagedObjectValidationRuleTypeNotSet:
-        default:
-            [NSException raise:@"NSManagedObjectValidationRuleType Not Set" format:@"Must set NSManagedObjectValidationRuleType before calling validate"];
-            valid = NO;
-            break;
-    }
-    
-    *errorMessages = messages;
+//    
+//    NSArray *messages = nil;
+//    
+//    switch (self.managedObjectvalidationRuleType) {
+//        case NSManagedObjectValidationUpdateRuleType:
+//            valid = [self.managedObject updateValidationResultWithErrorStrings:&messages];
+//            break;
+//        case NSManagedObjectValidationInsertRuleType:
+//            valid = [self.managedObject insertValidationResultWithErrorStrings:&messages];
+//            break;
+//        case NSManagedObjectValidationDeleteRuleType:
+//            valid = [self.managedObject deleteValidationResultWithErrorStrings:&messages];
+//            break;
+//        case NSManagedObjectValidationRuleTypeNotSet:
+//        default:
+//            [NSException raise:@"NSManagedObjectValidationRuleType Not Set" format:@"Must set NSManagedObjectValidationRuleType before calling validate"];
+//            valid = NO;
+//            break;
+//    }
+//    
+//    *errorMessages = messages;
     
     return valid;
 }

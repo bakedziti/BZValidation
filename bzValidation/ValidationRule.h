@@ -11,7 +11,10 @@
 @protocol ValidationRuleProtocol <NSObject>
 
 - (BOOL) validateWithMessages:(NSArray**)errorMessages;
-- (id) getObjectValueToValidate;
+
+- (NSArray*) valuesForValidation;
+//- (NSArray*) getValuesToValidate
+//- (id) getObjectValueToValidate; //Should change to (NSArray*)getValuesToValidate
 
 @property (nonatomic, retain) id validationControl;
 
