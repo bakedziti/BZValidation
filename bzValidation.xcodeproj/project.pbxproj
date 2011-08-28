@@ -67,6 +67,7 @@
 		E8351C8514091C2200C47010 /* StringNumbersRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringNumbersRule.h; sourceTree = "<group>"; };
 		E8351C8614091C2200C47010 /* StringNumbersRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringNumbersRule.m; sourceTree = "<group>"; };
 		E8351C8D14091C9C00C47010 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E8D799551409DD91002B5FBF /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +97,6 @@
 		E8351C3F14091B6600C47010 = {
 			isa = PBXGroup;
 			children = (
-				E8351C8D14091C9C00C47010 /* CoreData.framework */,
 				E8351C4F14091B6600C47010 /* bzValidation */,
 				E8351C6014091B6600C47010 /* bzValidationTests */,
 				E8351C4C14091B6600C47010 /* Frameworks */,
@@ -116,6 +116,7 @@
 		E8351C4C14091B6600C47010 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E8351C8D14091C9C00C47010 /* CoreData.framework */,
 				E8351C4D14091B6600C47010 /* Foundation.framework */,
 				E8351C5814091B6600C47010 /* UIKit.framework */,
 				E8351C5B14091B6600C47010 /* CoreGraphics.framework */,
@@ -148,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				E8351C5114091B6600C47010 /* bzValidation-Prefix.pch */,
+				E8D799551409DD91002B5FBF /* License.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -438,6 +440,7 @@
 				E8351C6F14091B6600C47010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8351C7014091B6600C47010 /* Build configuration list for PBXNativeTarget "bzValidationTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +449,7 @@
 				E8351C7214091B6600C47010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
