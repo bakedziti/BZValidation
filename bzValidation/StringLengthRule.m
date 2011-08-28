@@ -17,6 +17,7 @@
 @implementation StringLengthRule
 
 @synthesize minLength, maxLength;
+@synthesize targetObject;
 
 //--------------------------------------------------------------------------------------------------------------
 #pragma mark - Initialization and Deallocation
@@ -31,22 +32,36 @@
 }
 
 //--------------------------------------------------------------------------------------------------------------
-#pragma mark - ValidationRule
+#pragma mark - ValidationRuleProtocol
 
 - (BOOL) validateWithMessages:(NSArray **)errorMessages {
     
     BOOL valid = YES;
-    
-    NSString* textValue = (NSString*)[self getObjectValueToValidate];
-    
-    if (self.minLength) {
+
+    if ([self.targetObject conformsToProtocol:@protocol(ObjectValidationProtocol)]) {
+
+        id<ObjectValidationProtocol> ovp = (id<ObjectValidationProtocol>)self.targetObject;
         
-        valid = ([textValue length] >= [self.minLength intValue]);
-    }
+        for (ValidationValue *valVaue in [ovp validationValues]) {
+            
+            NSString *textValue = valVaue.fieldValue;
     
-    if (valid && self.maxLength) {
-    
-        valid = ([textValue length] <= [self.maxLength intValue]);
+            if (valid && self.minLength) {
+                
+                valid = ([textValue length] >= [self.minLength intValue]);
+            }
+            
+            if (valid && self.maxLength) {
+                
+                valid = ([textValue length] <= [self.maxLength intValue]);
+            }
+            
+        }
+        
+    } else {
+        
+        [NSException raise:@"Cannot Validate" format:@"Cannot validate for target object because it does not conform to the ObjectValidationProtocol"];
+        valid = NO;
     }
     
     return valid;

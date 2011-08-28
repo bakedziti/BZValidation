@@ -24,6 +24,7 @@
 
 @implementation StringNumbersRule
 
+@synthesize targetObject;
 @synthesize numberRule;
 @synthesize minNumber, maxNumber;
 
@@ -72,23 +73,36 @@
 #pragma mark - ValidationRule
 
 - (BOOL) validateWithMessages:(NSArray **)errorMessages {
- 
+
     BOOL valid = YES;
     
-    NSString *textValue = [self getObjectValueToValidate];
-    
-    if ((self.numberRule & kInteger) == kInteger) {
+    if ([self.targetObject conformsToProtocol:@protocol(ObjectValidationProtocol)]) {
         
-        NSLog(@"kInteger");
+        id<ObjectValidationProtocol> ovp = (id<ObjectValidationProtocol>)self.targetObject;
         
-        valid = [self validateIntegerInString:textValue];
+        for (ValidationValue *valVaue in [ovp validationValues]) {
+            
+            NSString *textValue = valVaue.fieldValue;
+            
+            if ((self.numberRule & kInteger) == kInteger) {
+                
+                NSLog(@"kInteger");
+                
+                valid = [self validateIntegerInString:textValue];
+                
+            } else if ((self.numberRule & kFloat) == kFloat) {
+                
+                valid = [self validateFloatInString:textValue];
+            }            
+        }
         
-    } else if ((self.numberRule & kFloat) == kFloat) {
+    } else {
         
-        valid = [self validateFloatInString:textValue];
+        [NSException raise:@"Cannot Validate" format:@"Cannot validate for target object because it does not conform to the ObjectValidationProtocol"];
+        valid = NO;
     }
     
-    return valid;    
+    return valid;   
 }
 
 //--------------------------------------------------------------------------------------------------------------

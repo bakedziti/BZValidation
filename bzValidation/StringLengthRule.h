@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "ValidationIncludes.h"
 
-
 @interface StringLengthRule : NSObject <ValidationRuleProtocol> {
     
 }

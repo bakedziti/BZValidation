@@ -212,9 +212,9 @@ static char valueKey;
 }
 
 - (void) addRule:(id<ValidationRuleProtocol>)rule {
-  
-#warning TODO: Need to figure out an alternative
-//    [rule setValidationControl:self];
+
+    //Ensure we set the target object for the rule as ourself
+    [rule setTargetObject:self];
     [self.writableRules addObject:rule];
 }
 

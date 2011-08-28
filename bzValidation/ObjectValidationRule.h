@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "ValidationIncludes.h"
 
-@interface ObjectValidationRule : NSObject <ValidationRuleProtocol>
+@interface ObjectValidationRule : NSObject //<ValidationRuleProtocol>
 
 @end

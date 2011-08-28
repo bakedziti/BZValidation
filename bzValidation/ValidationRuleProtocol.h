@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "ValidationIncludes.h"
 
 @protocol ValidationRuleProtocol <NSObject>
 
+@property (nonatomic, assign) NSObject *targetObject;
 - (BOOL) validateWithMessages:(NSArray**)errorMessages;
 
 @end

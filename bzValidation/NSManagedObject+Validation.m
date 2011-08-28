@@ -86,6 +86,8 @@ static char validationDelegateKey;
 
 - (void) addRule:(id<ValidationRuleProtocol>)rule {
     
+    //Ensure that we add ourself as the target object
+    [rule setTargetObject:self];
     [self.writableRules addObject:rule];
 }
 
