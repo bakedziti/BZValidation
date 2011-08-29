@@ -31,6 +31,10 @@
 		E8351CB2140ADBAE00C47010 /* ValidationValue.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351CB0140ADBAE00C47010 /* ValidationValue.m */; };
 		E8351CB5140ADC5900C47010 /* ValidationIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351CB4140ADC5900C47010 /* ValidationIncludes.h */; };
 		E8351CB8140B0C2B00C47010 /* NSManagedObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351CB7140B0C2B00C47010 /* NSManagedObjectTest.m */; };
+		E8351CBB140B0D7100C47010 /* bzValidationModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8351CB9140B0D7100C47010 /* bzValidationModel.xcdatamodeld */; };
+		E8351CC1140B0F5800C47010 /* Person.h in Headers */ = {isa = PBXBuildFile; fileRef = E8351CBF140B0F5700C47010 /* Person.h */; };
+		E8351CC2140B0F5800C47010 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E8351CC0140B0F5700C47010 /* Person.m */; };
+		E8351CC4140B150600C47010 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8351CC3140B150600C47010 /* CoreData.framework */; };
 		E8438D4F140A9DC300C723B7 /* ObjectValidationRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8438D4D140A9DC300C723B7 /* ObjectValidationRule.h */; };
 		E8438D50140A9DC300C723B7 /* ObjectValidationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8438D4E140A9DC300C723B7 /* ObjectValidationRule.m */; };
 		E8438D54140A9E5F00C723B7 /* CompareTwoValuesRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8438D52140A9E5F00C723B7 /* CompareTwoValuesRule.h */; };
@@ -76,6 +80,10 @@
 		E8351CB4140ADC5900C47010 /* ValidationIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationIncludes.h; sourceTree = "<group>"; };
 		E8351CB6140B0C2B00C47010 /* NSManagedObjectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectTest.h; sourceTree = "<group>"; };
 		E8351CB7140B0C2B00C47010 /* NSManagedObjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectTest.m; sourceTree = "<group>"; };
+		E8351CBA140B0D7100C47010 /* bzValidationModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bzValidationModel.xcdatamodel; sourceTree = "<group>"; };
+		E8351CBF140B0F5700C47010 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		E8351CC0140B0F5700C47010 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		E8351CC3140B150600C47010 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E8438D4D140A9DC300C723B7 /* ObjectValidationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectValidationRule.h; sourceTree = "<group>"; };
 		E8438D4E140A9DC300C723B7 /* ObjectValidationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectValidationRule.m; sourceTree = "<group>"; };
 		E8438D52140A9E5F00C723B7 /* CompareTwoValuesRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareTwoValuesRule.h; sourceTree = "<group>"; };
@@ -97,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8351CC4140B150600C47010 /* CoreData.framework in Frameworks */,
 				E8351C5914091B6600C47010 /* UIKit.framework in Frameworks */,
 				E8351C5A14091B6600C47010 /* Foundation.framework in Frameworks */,
 				E8351C5C14091B6600C47010 /* CoreGraphics.framework in Frameworks */,
@@ -160,11 +169,14 @@
 		E8351C6014091B6600C47010 /* bzValidationTests */ = {
 			isa = PBXGroup;
 			children = (
+				E8351CBF140B0F5700C47010 /* Person.h */,
+				E8351CC0140B0F5700C47010 /* Person.m */,
 				E8351C6714091B6600C47010 /* bzValidationTests.h */,
 				E8351C6914091B6600C47010 /* bzValidationTests.m */,
 				E8351C6114091B6600C47010 /* Supporting Files */,
 				E8351CB6140B0C2B00C47010 /* NSManagedObjectTest.h */,
 				E8351CB7140B0C2B00C47010 /* NSManagedObjectTest.m */,
+				E8351CB9140B0D7100C47010 /* bzValidationModel.xcdatamodeld */,
 			);
 			path = bzValidationTests;
 			sourceTree = "<group>";
@@ -172,6 +184,7 @@
 		E8351C6114091B6600C47010 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E8351CC3140B150600C47010 /* CoreData.framework */,
 				E8351C6214091B6600C47010 /* bzValidationTests-Info.plist */,
 				E8351C6314091B6600C47010 /* InfoPlist.strings */,
 				E8351C6614091B6600C47010 /* bzValidationTests-Prefix.pch */,
@@ -236,6 +249,7 @@
 				E8351CAE140ADB2900C47010 /* ValidationRuleProtocol.h in Headers */,
 				E8351CB1140ADBAE00C47010 /* ValidationValue.h in Headers */,
 				E8351CB5140ADC5900C47010 /* ValidationIncludes.h in Headers */,
+				E8351CC1140B0F5800C47010 /* Person.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +358,7 @@
 				E8438D50140A9DC300C723B7 /* ObjectValidationRule.m in Sources */,
 				E8438D55140A9E5F00C723B7 /* CompareTwoValuesRule.m in Sources */,
 				E8351CB2140ADBAE00C47010 /* ValidationValue.m in Sources */,
+				E8351CC2140B0F5800C47010 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +368,7 @@
 			files = (
 				E8351C6A14091B6600C47010 /* bzValidationTests.m in Sources */,
 				E8351CB8140B0C2B00C47010 /* NSManagedObjectTest.m in Sources */,
+				E8351CBB140B0D7100C47010 /* bzValidationModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +518,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E8351CB9140B0D7100C47010 /* bzValidationModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E8351CBA140B0D7100C47010 /* bzValidationModel.xcdatamodel */,
+			);
+			currentVersion = E8351CBA140B0D7100C47010 /* bzValidationModel.xcdatamodel */;
+			path = bzValidationModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E8351C4114091B6600C47010 /* Project object */;
 }
