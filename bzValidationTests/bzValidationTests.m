@@ -35,7 +35,7 @@
     self.managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];    
 
 //    self.managedObjectModel = [NSManagedObjectModel mergedModelFromBundles: nil];
-    NSLog(@"model: %@", self.managedObjectModel);
+//    NSLog(@"model: %@", self.managedObjectModel);
     self.persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: self.managedObjectModel];
     self.persistentStore = [self.persistentStoreCoordinator addPersistentStoreWithType: NSInMemoryStoreType
                                 configuration: nil
@@ -64,7 +64,7 @@
 }
 
 
-- (void) testNSManagedObject {
+- (void) testNSManagedObjectMaximumNumberExceeded {
     
 
     Person *person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:self.managedObjectContext];
@@ -75,10 +75,15 @@
     
     person.FirstName = @"Joseph";
     person.LastName = @"DeCarlo";
+    person.Age = [NSNumber numberWithInt:130];
     
     NSArray *errorMessages = nil;
 
-    [person preValidateForUpdate:&errorMessages];
+    BOOL result = [person preValidateForUpdate:&errorMessages];
+    
+    STAssertFalseNoThrow(result, @"Validation should have flagged Person.Age as exceeding maximum age");
+    STAssertTrue(([errorMessages count] == 1),  @"Validation should have only had 1 validation error reported");
+
 
 }
 

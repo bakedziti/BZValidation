@@ -461,6 +461,8 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -481,6 +483,8 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
