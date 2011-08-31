@@ -14,4 +14,9 @@
     
 }
 
+#if USE_APPLICATION_UNIT_TEST
+
+- (void) testTextFieldStringLength;
+
+#endif
 @end
