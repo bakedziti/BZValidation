@@ -67,9 +67,7 @@ static char validationDelegateKey;
     
     NSMutableArray *vValues = [NSMutableArray array];
     
-    NSEntityDescription *entityDescription = (NSEntityDescription*) self;
-    
-    NSDictionary *attributes = [entityDescription attributesByName];
+    NSDictionary *attributes = [self.entity propertiesByName];
     
     
     NSArray *keys = [attributes allKeys];

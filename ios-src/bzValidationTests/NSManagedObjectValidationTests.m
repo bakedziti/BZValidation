@@ -34,8 +34,6 @@
     NSURL *modelURL = [bundle URLForResource:@"bzValidationModel" withExtension:@"momd"];
     self.managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];    
 
-//    self.managedObjectModel = [NSManagedObjectModel mergedModelFromBundles: nil];
-//    NSLog(@"model: %@", self.managedObjectModel);
     self.persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: self.managedObjectModel];
     self.persistentStore = [self.persistentStoreCoordinator addPersistentStoreWithType: NSInMemoryStoreType
                                 configuration: nil
@@ -169,6 +167,45 @@
     
     STAssertFalseNoThrow(result, @"Validation should have flagged Person.FirstName and Person.Age as errors");
     STAssertTrue(([errorMessages count] == 2),  @"Validation should have had 2 validation errors reported");
+}
+
+- (void) testNSManagedObjectValidationValues {
+    
+    Person *person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:self.managedObjectContext];
+    
+    NSDate *today = [NSDate date];
+    
+    person.FirstName = @"Joseph";
+    person.MiddleName = @"Daniel";
+    person.LastName = @"DeCarlo";
+    person.Age = [NSNumber numberWithInt:40];
+    person.BirthDate = today;
+    
+    NSArray *validationValues = [person validationValues];
+    
+    for (ValidationValue *validationValue in validationValues) {
+        
+        if (validationValue.fieldName == @"FirstName") {
+            
+            STAssertEquals(validationValue.fieldValue, person.FirstName, @"The field %@ value of %@ did not match the expected value of %@", validationValue.fieldName, validationValue.fieldValue, person.FirstName);
+            
+        } else if (validationValue.fieldName == @"LastName") {
+            
+            STAssertEquals(validationValue.fieldValue, person.FirstName, @"The field %@ value of %@ did not match the expected value of %@", validationValue.fieldName, validationValue.fieldValue, person.LastName);
+            
+        } else if (validationValue.fieldName == @"MiddleName") {
+            
+            STAssertEquals(validationValue.fieldValue, person.FirstName, @"The field %@ value of %@ did not match the expected value of %@", validationValue.fieldName, validationValue.fieldValue, person.MiddleName);
+            
+        } else if (validationValue.fieldName == @"Age") {
+            
+            STAssertEquals(validationValue.fieldValue, person.FirstName, @"The field %@ value of %@ did not match the expected value of %@", validationValue.fieldName, validationValue.fieldValue, person.Age);
+            
+        } else if (validationValue.fieldName == @"BirthDate") {
+            
+            STAssertEquals(validationValue.fieldValue, person.FirstName, @"The field %@ value of %@ did not match the expected value of %@", validationValue.fieldName, validationValue.fieldValue, person.BirthDate);            
+        }
+    }
 }
 
 @end
