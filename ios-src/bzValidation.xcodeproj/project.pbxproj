@@ -39,6 +39,8 @@
 		E8438D50140A9DC300C723B7 /* ObjectValidationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8438D4E140A9DC300C723B7 /* ObjectValidationRule.m */; };
 		E8438D54140A9E5F00C723B7 /* CompareTwoValuesRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8438D52140A9E5F00C723B7 /* CompareTwoValuesRule.h */; };
 		E8438D55140A9E5F00C723B7 /* CompareTwoValuesRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E8438D53140A9E5F00C723B7 /* CompareTwoValuesRule.m */; };
+		E863F5B01411B9D400BE5D47 /* StringDateCompareRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E863F5AE1411B9D400BE5D47 /* StringDateCompareRule.h */; };
+		E863F5B11411B9D400BE5D47 /* StringDateCompareRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E863F5AF1411B9D400BE5D47 /* StringDateCompareRule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		E8438D4E140A9DC300C723B7 /* ObjectValidationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectValidationRule.m; sourceTree = "<group>"; };
 		E8438D52140A9E5F00C723B7 /* CompareTwoValuesRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareTwoValuesRule.h; sourceTree = "<group>"; };
 		E8438D53140A9E5F00C723B7 /* CompareTwoValuesRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompareTwoValuesRule.m; sourceTree = "<group>"; };
+		E863F5AE1411B9D400BE5D47 /* StringDateCompareRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringDateCompareRule.h; sourceTree = "<group>"; };
+		E863F5AF1411B9D400BE5D47 /* StringDateCompareRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringDateCompareRule.m; sourceTree = "<group>"; };
 		E8D799551409DD91002B5FBF /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +220,8 @@
 				E8351C8414091C2200C47010 /* StringLengthRule.m */,
 				E8351C8514091C2200C47010 /* StringNumbersRule.h */,
 				E8351C8614091C2200C47010 /* StringNumbersRule.m */,
+				E863F5AE1411B9D400BE5D47 /* StringDateCompareRule.h */,
+				E863F5AF1411B9D400BE5D47 /* StringDateCompareRule.m */,
 			);
 			name = "Validation Rules";
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 				E8351CB1140ADBAE00C47010 /* ValidationValue.h in Headers */,
 				E8351CB5140ADC5900C47010 /* ValidationIncludes.h in Headers */,
 				E8351CC1140B0F5800C47010 /* Person.h in Headers */,
+				E863F5B01411B9D400BE5D47 /* StringDateCompareRule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +366,7 @@
 				E8438D55140A9E5F00C723B7 /* CompareTwoValuesRule.m in Sources */,
 				E8351CB2140ADBAE00C47010 /* ValidationValue.m in Sources */,
 				E8351CC2140B0F5800C47010 /* Person.m in Sources */,
+				E863F5B11411B9D400BE5D47 /* StringDateCompareRule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

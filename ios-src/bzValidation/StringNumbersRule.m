@@ -76,7 +76,11 @@
 
     BOOL valid = YES;
     
-    if ([self.targetObject conformsToProtocol:@protocol(ObjectValidationProtocol)]) {
+    BOOL conformsToProtocol = [self.targetObject conformsToProtocol:@protocol(ObjectValidationProtocol)];
+    
+    NSAssert(conformsToProtocol, @"Cannot validate for target object because it does not conform to the ObjectValidationProtocol");
+    
+    if (conformsToProtocol) {
         
         id<ObjectValidationProtocol> ovp = (id<ObjectValidationProtocol>)self.targetObject;
         
@@ -96,10 +100,6 @@
             }            
         }
         
-    } else {
-        
-        [NSException raise:@"Cannot Validate" format:@"Cannot validate for target object because it does not conform to the ObjectValidationProtocol"];
-        valid = NO;
     }
     
     return valid;   
